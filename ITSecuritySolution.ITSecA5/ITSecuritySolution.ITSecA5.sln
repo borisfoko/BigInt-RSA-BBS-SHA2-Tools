@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHA2.Utils", "SHA2.Utils\SHA2.Utils.csproj", "{E4235D0C-9C14-40EC-BF58-5B26E8F8FB40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigInt.Test.ITSecA5", "BigInt.Test.ITSecA5\BigInt.Test.ITSecA5.csproj", "{30402803-05C1-4DAC-B4ED-8F946E3925D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4235D0C-9C14-40EC-BF58-5B26E8F8FB40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4235D0C-9C14-40EC-BF58-5B26E8F8FB40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4235D0C-9C14-40EC-BF58-5B26E8F8FB40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4235D0C-9C14-40EC-BF58-5B26E8F8FB40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30402803-05C1-4DAC-B4ED-8F946E3925D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30402803-05C1-4DAC-B4ED-8F946E3925D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30402803-05C1-4DAC-B4ED-8F946E3925D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30402803-05C1-4DAC-B4ED-8F946E3925D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59DE3125-7EAA-4508-AEBC-D1835A878BBA}
+	EndGlobalSection
+EndGlobal

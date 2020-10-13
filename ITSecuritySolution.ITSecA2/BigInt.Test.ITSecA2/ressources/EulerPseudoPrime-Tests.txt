@@ -1,0 +1,163 @@
+# Tests auf Pseudoprimzahlen fuer den Euler-Test, der bei
+# bei diesen Zahlen immer versagt
+# Das ist der alleinige Euler-Test, ohne vorherige Pruefung
+# von ggT(a,b).
+#
+# # Kommentar bis Zeilenende
+# t is the title of the test
+# s ist die Groesse der Zahl in Bits
+# c Kommentar: 'pseudo': einfache Pseudoprimzahl
+#              'absolute pseudo': absolute Pseudoprimzahl
+# a ist die Basis fuer das Versagen
+#       Alle Zahlen sind positiv.
+# a Basis in Hex
+# A Basis in Dezimal
+# p in Hex
+# P in Dezimal
+#    p ist keine Primzahl
+#    Das Resultat hier muss immer Prime sein, da bei diesen Zahlen
+#    der Test versagt.
+#
+# Bei absoluten Pseudoprimzahlen scheitern alle Basen a,
+# wenn a teilerfremd zu p sind, d.h. nur bei ggT(a,p)<>0
+# liegt in diesem a ein Zeuge vor.
+#
+# Siehe https://de.wikibooks.org/wiki/Pseudoprimzahlen:_Tabelle_Pseudoprimzahlen_(15_-_4999)
+# https://oeis.org/A033181
+#
+# Bei den Hex-Zahlen gibt es vorlaufende 0,
+# damit immer eine gerade Anzahl von Hex-Ziffern vorhanden ist,
+# d.h. es passt immer in Bytes.
+#
+# Version 9 22/02/2019
+#
+t=Euler-PseudoPrime-1
+s=128
+c=pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x00000000000000000000000000000080
+A=+128
+p=+0x00000000000000000000000000000155
+P=+341
+#--------------------------
+t=Euler-PseudoPrime-2
+s=128
+c=pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x00000000000000000000000000000494
+A=+1172
+p=+0x00000000000000000000000000000691
+P=+1681
+#--------------------------
+t=Euler-PseudoPrime-3
+s=128
+c=pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x0000000000000000000000000000013b
+A=+315
+p=+0x00000000000000000000000000000991
+P=+2449
+#--------------------------
+t=Euler-PseudoPrime-4
+s=128
+c=pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x00000000000000000000000000000002
+A=+2
+p=+0x000000000000000000000000000006c1
+P=+1729
+#--------------------------
+t=Euler-PseudoPrime-5
+s=128
+c=absolute pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x00000000000000000000000000000003
+A=+3
+p=+0x000000000000000000000000000009a1
+P=+2465
+#--------------------------
+t=Euler-PseudoPrime-6
+s=128
+c=absolute pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x00000000000000000000000000000005
+A=+5
+p=+0x00000000000000000000000000012661
+P=+75361
+#--------------------------
+t=Euler-PseudoPrime-7
+s=128
+c=absolute pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x00000000000000000000000000000002
+A=+2
+p=+0x00000000000000000000000000027a61
+P=+162401
+#--------------------------
+t=Euler-PseudoPrime-8
+s=128
+c=absolute pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x00000000000000000000000000000003
+A=+3
+p=+0x000000000000000000000000000775b1
+P=+488881
+#--------------------------
+t=Euler-PseudoPrime-9
+s=128
+c=absolute pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x00000000000000000000000000000005
+A=+5
+p=+0x000000000000000000000000000f3901
+P=+997633
+#--------------------------
+t=Euler-PseudoPrime-10
+s=128
+c=absolute pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x00000000000000000000000000000002
+A=+2
+p=+0x000000000000000000000000002ea7c1
+P=+3057601
+#--------------------------
+t=Euler-PseudoPrime-11
+s=128
+c=absolute pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x00000000000000000000000000000003
+A=+3
+p=+0x000000000000000000000000004ad3f1
+P=+4903921
+#--------------------------
+t=Euler-PseudoPrime-12
+s=128
+c=absolute pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x00000000000000000000000000000005
+A=+5
+p=+0x00000000000000000000002849887459
+P=+173032371289
+#--------------------------
+t=Euler-PseudoPrime-13
+s=128
+c=absolute pseudo
+# Euler: Prime
+# Real: *No*Prime!
+a=+0x0000000000000000000000003520ff01
+A=+891354881
+p=+0x000000000000000000037591f4ad94a1
+P=+973694665856161
+#--------------------------

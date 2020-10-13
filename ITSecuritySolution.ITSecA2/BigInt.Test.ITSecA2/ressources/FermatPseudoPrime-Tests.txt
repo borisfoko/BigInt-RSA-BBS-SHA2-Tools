@@ -1,0 +1,203 @@
+# Tests auf Pseudoprimzahlen fuer den Fermat-Test, der bei
+# bei diesen Zahlen immer versagt
+# Das ist der alleinige Fermat-Test, ohne vorherige Pruefung
+# von ggT(a,b).        
+#
+# # Kommentar bis Zeilenende
+# t is the title of the test
+# s ist die Groesse der Zahl in Bits
+# c Kommentar: 'pseudo': einfache Pseudoprimzahl
+#              'absolute pseudo': absolute Pseudoprimzahl
+#              'Carmichael': Carmichael-Zahl
+# a ist die Basis fuer das Versagen
+#       Alle Zahlen sind positiv und dezimal.
+# a Basis in Hex
+# A Basis in Dezimal
+# p in Hex
+# P in Dezimal
+#    p ist keine Primzahl
+# Das Resultat hier muss immer Prime sein, da bei diesen Zahlen
+# der Test versagt.
+#
+# Bei Carmichael-Zahlen scheitern alle Basen a,
+# wenn a teilerfremd zu p sind, d.h. nur bei ggT(a,p)<>0
+# liegt in a ein Zeuge vor.
+#
+# Siehe
+# https://de.wikibooks.org/wiki/Pseudoprimzahlen:_Tabelle_Pseudoprimzahlen_(15_-_4999)
+# https://oeis.org/A033181
+#
+# Bei den Hex-Zahlen gibt es vorlaufende 0,
+# damit immer eine gerade Anzahl von Hex-Ziffern vorhanden ist,
+# d.h. es passt immer in Bytes.
+#
+# Version 8 22/02/2019
+#
+t=Fermat-PseudoPrime-1
+s=128
+c=pseudo
+a=+0x00000000000000000000000000000040
+A=+64
+p=+0x00000000000000000000000000000069
+P=+105
+#--------------------------
+t=Fermat-PseudoPrime-2
+s=128
+c=pseudo
+a=+0x00000000000000000000000000000028
+A=+40
+p=+0x0000000000000000000000000000007b
+P=+123
+#--------------------------
+t=Fermat-PseudoPrime-3
+s=128
+c=pseudo
+a=+0x00000000000000000000000000000079
+A=+121
+p=+0x000000000000000000000000000000b7
+P=+183
+#--------------------------
+t=Fermat-PseudoPrime-4
+s=128
+c=pseudo
+a=+0x00000000000000000000000000000092
+A=+146
+p=+0x000000000000000000000000000000cb
+P=+203
+#--------------------------
+t=Fermat-PseudoPrime-5
+s=128
+c=pseudo
+a=+0x00000000000000000000000000000003
+A=+3
+p=+0x0000000000000000000000000000011e
+P=+286
+#--------------------------
+t=Fermat-PseudoPrime-6
+s=128
+c=pseudo
+a=+0x00000000000000000000000000000090
+A=+144
+p=+0x0000000000000000000000000000013f
+P=+319
+#--------------------------
+t=Fermat-PseudoPrime-7
+s=128
+c=pseudo
+a=+0x000000000000000000000000000000d5
+A=+213
+p=+0x00000000000000000000000000000155
+P=+341
+#--------------------------
+t=Fermat-PseudoPrime-8
+s=128
+c=pseudo
+a=+0x00000000000000000000000000000056
+A=+86
+p=+0x00000000000000000000000000000179
+P=+377
+#--------------------------
+t=Fermat-PseudoPrime-9
+s=128
+c=pseudo
+a=+0x0000000000000000000000000000004c
+A=+76
+p=+0x00000000000000000000000000000181
+P=+385
+#--------------------------
+t=Fermat-PseudoPrime-10
+s=128
+c=pseudo
+a=+0x000000000000000000000000000000e9
+A=+233
+p=+0x00000000000000000000000000000196
+P=+406
+#--------------------------
+t=Fermat-PseudoPrime-11
+s=128
+c=pseudo
+a=+0x000000000000000000000000000000b1
+A=+177
+p=+0x00000000000000000000000000000a0c
+P=+2572
+#--------------------------
+t=Fermat-PseudoPrime-12
+s=128
+c=pseudo
+a=+0x000000000000000000000000000002f1
+A=+753
+p=+0x00000000000000000000000000000a48
+P=+2632
+#--------------------------
+t=Fermat-PseudoPrime-13
+s=128
+c=pseudo
+a=+0x00000000000000000000000000000222
+A=+546
+p=+0x00000000000000000000000000000aaf
+P=+2735
+#--------------------------
+t=Fermat-PseudoPrime-14
+s=128
+c=pseudo
+a=+0x000000000000000000000000000000b1
+A=+177
+p=+0x00000000000000000000000000000a0c
+P=+2572
+#--------------------------
+t=Fermat-PseudoPrime-15
+s=128
+c=pseudo
+a=+0x000000000000000000000000000002f1
+A=+753
+p=+0x00000000000000000000000000000a48
+P=+2632
+#--------------------------
+t=Fermat-PseudoPrime-16
+s=128
+c=Carmichael
+a=+0x00000000000000000000000000000222
+A=+546
+p=+0x00000000000000000000000000000231
+P=+561
+#--------------------------
+t=Fermat-PseudoPrime-17
+s=128
+c=Carmichael
+a=+0x000000000000000000000000000000b1
+A=+177
+p=+0x00000000000000000000000000002959
+P=+10585
+#--------------------------
+t=Fermat-PseudoPrime-18
+s=128
+c=Carmichael
+a=+0x000000000000000000000000000002f1
+A=+753
+p=+0x00000000000000000000000000051949
+P=+334153
+#--------------------------
+t=Fermat-PseudoPrime-19
+s=128
+c=Carmichael
+a=+0x000000000000000000000000000000e9
+A=+233
+p=+0x0000000000000000000000000006da29
+P=+449065
+#--------------------------
+t=Fermat-PseudoPrime-20
+s=128
+c=Carmichael
+a=+0x00000000000000000000000000000222
+A=+546
+p=+0x0000000000000000000000000007d1cd
+P=+512461
+#--------------------------
+t=Fermat-PseudoPrime-21
+s=128
+c=Carmichael
+a=+0x000000000000000000000000000002f1
+A=+753
+p=+0x00000000000000000000000000051949
+P=+334153
+#--------------------------
